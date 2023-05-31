@@ -6,6 +6,6 @@ class BasicTest(TestCase):
         self.assertFalse(settings.DEBUG)
         
     def test_admin_homepage(self):
-        r = self.client.get('/admin/, follow=True)
+        r = self.client.get('/admin/', follow=True)
         self.assertEqual(r.status_code, 200)
     
